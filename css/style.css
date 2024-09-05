@@ -108,11 +108,19 @@ h4{
   color: var(--lighting-color);
 }
 
-.social{
-  margin-top: 3.5rem;
-}
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3.5rem;
+  }
+  
+.social img {
+    margin-right: 1.5rem;
+    width: 2.5rem;
+  }
 
-.social img{
-  margin-right: 2rem;
-  width: 2.5rem;
+.social img:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
 }

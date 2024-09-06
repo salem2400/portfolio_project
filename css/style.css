@@ -18,6 +18,29 @@ html{
       color: var(--lighting-color);
 }
 
+
+h1{
+  font-size: 4.65rem;
+  margin: 1,7rem 0;
+}
+
+h2{
+  font-size: 2.2rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem; ;
+}
+
+h4{
+  font-size: 1.25rem;
+  letter-spacing: 0.12rem;
+  color: var(--lighting-color);
+}
+
 .home{
   width: 100%;
   height: 100vh;
@@ -28,12 +51,6 @@ html{
 }
 span{
   color: var(--primmary-color);
-}
-
-h2{
-  font-size: 2.2rem;
-  letter-spacing: 0.12rem;
-  cursor: pointer;
 }
 
 nav{
@@ -85,27 +102,12 @@ nav ul li a:hover{
   padding: 0  var(--padding);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container-texts{
   position: relative;
   bottom: 70px;
-}
-
-h1{
-  font-size: 4.65rem;
-  margin: 1,7rem 0;
-}
-
-h3{
-  font-size: 1.5rem;
-  margin-bottom: 3.5rem; ;
-}
-
-h4{
-  font-size: 1.25rem;
-  letter-spacing: 0.12rem;
-  color: var(--lighting-color);
 }
 
 .social {
@@ -123,4 +125,19 @@ h4{
 .social img:hover{
   transform: scale(1.2);
   transition: 0.4s;
+}
+.container-images {
+  width: 45%;
+  height: 90%;
+  position: relative;
+  align-self: flex-end;
+}
+
+.container-images img{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
 }

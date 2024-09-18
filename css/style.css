@@ -1,70 +1,73 @@
-:root{
+/* Root variables for colors, padding, etc., to maintain a consistent theme */
+:root {
   --primary-color: #ff274b;
-  --secondary-color:#ff4500;
+  --secondary-color: #ff4500;
   --lighting-color: #ffffff;
   --bgColor-1: #040404;
   --bgColor-2: #22282a;
-  --padding:8%;
+  --padding: 8%;
 }
-*{
+
+/* Universal selector to reset default margin and padding, box-sizing for border-box model */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
 
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 16px;
-      color: var(--lighting-color);
+/* HTML tag styling, setting the font family, base font size, and color */
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color: var(--lighting-color);
 }
 
-
-h1{
+/* Header tags styling with different font sizes and spacing */
+h1 {
   font-size: 4.65rem;
   margin: 1.7rem 0;
 }
 
-h2{
+h2 {
   font-size: 2.2rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
-  margin-bottom: 3.5rem; ;
+  margin-bottom: 3.5rem;
 }
 
-h4{
+h4 {
   font-size: 1.25rem;
   letter-spacing: 0.12rem;
   color: var(--primary-color);
 }
 
-h5{
+h5 {
   font-size: 1.37rem;
   margin-bottom: 1.5rem;
   letter-spacing: 2px;
 }
 
-span{
+/* Span element color for primary color highlights */
+span {
   color: var(--primary-color);
 }
 
-p{
+/* Paragraph text styling */
+p {
   color: var(--lighting-color);
   letter-spacing: 1px;
   line-height: 1.8rem;
   font-size: 1rem;
 }
 
+/*-----------------------------------HOME SECTION---------------------------------------*/
 
-/*------------------------------------------------------------------------------------
------------------------------------HOME SECTION---------------------------------------
-------------------------------------------------------------------------------------*/
-
-
-.home{
+/* Home section styling - full viewport height, background color, flex layout */
+.home {
   width: 100%;
   height: 100vh;
   background-color: var(--bgColor-1);
@@ -72,7 +75,8 @@ p{
   flex-direction: column;
 }
 
-nav{
+/* Navigation bar styling with padding, flex layout for spacing items */
+nav {
   padding-top: 2.2rem;
   padding-left: var(--padding);
   padding-right: var(--padding);
@@ -81,82 +85,91 @@ nav{
   align-items: center;
 }
 
+/* Navigation list items - inline display with spacing */
 nav ul li {
   list-style: none;
   display: inline-block;
   margin: 0.8rem 1.5rem;
 }
 
-nav ul li a{
+/* Links in the navigation menu */
+nav ul li a {
   color: var(--lighting-color);
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.4s;
 }
 
-nav ul li a:hover{
+/* Hover effect on navigation links */
+nav ul li a:hover {
   color: var(--primary-color);
-
 }
 
-.btn{
+/* Button styling - background color, padding, border-radius */
+.btn {
   background-color: var(--primary-color);
   color: var(--lighting-color);
   text-decoration: none;
   font-weight: bold;
   padding: 0.8rem 1.87rem;
-  border-radius: 30px; 
+  border-radius: 30px;
   border: 2px solid transparent;
   transition: 0.4s;
 }
 
-.btn:hover{
+/* Button hover effect */
+.btn:hover {
   background-color: transparent;
   border: 2px solid var(--primary-color);
 }
 
-.content{
+/* Content area within the home section - flex layout for center alignment */
+.content {
   flex-grow: 1;
-  padding: 0  var(--padding);
+  padding: 0 var(--padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container-texts{
+/* Container for text in the home section */
+.container-texts {
   position: relative;
   bottom: 70px;
 }
 
+/* Social media icons container */
 .social {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 3.5rem;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3.5rem;
+}
 
-.social a{
+.social a {
   text-decoration: none;
 }
-  
-.social img {
-    margin-right: 1.5rem;
-    width: 2.5rem;
-  }
 
-.social img:hover{
+.social img {
+  margin-right: 1.5rem;
+  width: 2.5rem;
+}
+
+/* Hover effect for social media icons */
+.social img:hover {
   transform: scale(1.2);
   transition: 0.4s;
 }
 
-.home .container-images{
+/* Image container in the home section */
+.home .container-images {
   width: 45%;
   height: 90%;
   position: relative;
   align-self: flex-end;
 }
 
-.home .container-images img{
+.home .container-images img {
   position: absolute;
   bottom: 0;
   height: 100%;
@@ -165,20 +178,19 @@ nav ul li a:hover{
   transition: bottom 1s, left 1s;
 }
 
-.home .container-images:hover .shape{
+/* Hover effect on the images in the home section */
+.home .container-images:hover .shape {
   bottom: 40px;
 }
 
-.home .container-images:hover .pic{
+.home .container-images:hover .pic {
   left: 45%;
 }
 
-/*------------------------------------------------------------------------------------
------------------------------------ABOUT SECTION---------------------------------------
-------------------------------------------------------------------------------------*/
+/*-----------------------------------ABOUT SECTION-------------------------------------*/
 
-
-.about{
+/* About section styling - flex layout for text and image */
+.about {
   background-color: var(--bgColor-2);
   padding: 2rem var(--padding);
   display: flex;
@@ -186,37 +198,39 @@ nav ul li a:hover{
   justify-content: space-evenly;
 }
 
-.about .container-images{
+.about .container-images {
   width: 35%;
 }
 
-.about .container-images img{
+.about .container-images img {
   width: 90%;
 }
 
-.about .container-texts{
-  width: 35%;  
+.about .container-texts {
+  width: 35%;
 }
 
-/*------------------------------------------------------------------------------------
------------------------------------SERVICES SECTION---------------------------------------
-------------------------------------------------------------------------------------*/
+/*-----------------------------------SERVICES SECTION----------------------------------*/
 
-.services{
+/* Services section - background color and padding */
+.services {
   background-color: var(--bgColor-1);
   padding: 2rem var(--padding);
 }
 
-.text-center{
+/* Centered text alignment */
+.text-center {
   text-align: center;
 }
 
+/* Box layout for services */
 .box {
   display: flex;
   justify-content: space-between;
 }
 
-.card{
+/* Individual service card styling */
+.card {
   width: 250px;
   background-color: var(--bgColor-2);
   border-radius: 20px;
@@ -224,13 +238,16 @@ nav ul li a:hover{
   text-align: center;
 }
 
-.card i{
+.card i {
   font-size: 3.12rem;
-  text-align: center;
   color: var(--primary-color);
   margin: 2rem;
 }
-.skills{
+
+/*-----------------------------------SKILLS SECTION------------------------------------*/
+
+/* Skills section styling */
+.skills {
   background-color: var(--bgColor-2);
   padding: 2rem var(--padding);
   display: flex;
@@ -238,30 +255,26 @@ nav ul li a:hover{
   justify-content: space-between;
 }
 
-/*------------------------------------------------------------------------------------
------------------------------------SKILLS SECTION---------------------------------------
-------------------------------------------------------------------------------------*/
-
-.skills .container-images{
+.skills .container-images {
   width: 35%;
 }
 
-.skills .container-images img{
+.skills .container-images img {
   width: 90%;
 }
 
-.skills .container-skills{
-  width: 50%;  
+.skills .container-skills {
+  width: 50%;
 }
 
-.content-skills{
+.content-skills {
   display: flex;
   flex-wrap: wrap;
   margin-top: 4rem;
-
 }
 
-.skill{
+/* Individual skill item */
+.skill {
   width: 100px;
   height: 100px;
   background-color: var(--lighting-color);
@@ -272,46 +285,42 @@ nav ul li a:hover{
   justify-content: center;
 }
 
-.skill img{
+.skill img {
   width: 80%;
 }
 
-/*------------------------------------------------------------------------------------
------------------------------------FOOTER SECTION---------------------------------------
-------------------------------------------------------------------------------------*/
+/*-----------------------------------FOOTER SECTION------------------------------------*/
 
-footer{
+/* Footer section styling */
+footer {
   padding: 2rem var(--padding);
   background-color: var(--bgColor-1);
 }
 
-footer .content-footer{
+footer .content-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-footer .content-footer p{
+footer .content-footer p {
   color: var(--lighting-color);
   text-align: center;
   width: 500px;
   margin-top: 1rem;
 }
 
-footer .content-footer .end{
+footer .content-footer .end {
   color: var(--primary-color);
   margin-top: 1rem;
-
 }
 
-/*------------------------------------------------------------------------------------
------------------------------------HUMBERGER MENU---------------------------------------
-------------------------------------------------------------------------------------*/
+/*-----------------------------------HAMBURGER MENU------------------------------------*/
 
-#menu{
+/* Hamburger menu button styling */
+#menu {
   display: none;
-  position: relative;
   appearance: none;
   border: none;
   outline: none;
@@ -320,24 +329,25 @@ footer .content-footer .end{
   user-select: none;
 }
 
-#menu.is-active span:nth-child(1){
+/* Transformations for the hamburger menu when active */
+#menu.is-active span:nth-child(1) {
   transform: translate(0, -2px) rotate(45deg);
 }
 
-#menu.is-active span:nth-child(2){
+#menu.is-active span:nth-child(2) {
   opacity: 0;
   transform: translateX(15px);
 }
 
-#menu.is-active span:nth-child(3){
+#menu.is-active span:nth-child(3) {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 
-#menu.is-active span{
+#menu.is-active span {
   background-color: var(--primary-color);
 }
 
-#menu span{
+#menu span {
   display: block;
   width: 33px;
   height: 4px;
@@ -345,12 +355,15 @@ footer .content-footer .end{
   border-radius: 6px 0;
   transform-origin: 0 0;
   transition: 0.4s;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
-/*------------------------------------------------------------------------------------
------------------------------------MEDIA QUERIES---------------------------------------
-------------------------------------------------------------------------------------*/
 
+/*-----------------------------------MEDIA QUERIES-------------------------------------*/
+
+/* Mobile styles for different screen sizes */
+
+
+/* For max-width: 575px */
 @media screen and (max-width: 575px){
   :root {
     padding: 1.5rem;
